@@ -1,0 +1,336 @@
+body {
+    --fa-style-family-classic: "Font Awesome 6 Free";
+    --fa-font-solid: normal 900 1em/1 "Font Awesome 6 Free";
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif; /* Example: Using Poppins for all text */
+
+}
+
+.top-bar {
+    background-color: #333333;
+    color: #ffffff;
+    padding: 8px 0;
+    width: 100%;
+    position: fixed; /* Fix the top bar at the top */
+    top: 0; /* Align top edge of the bar with the top edge of the viewport */
+    left: 0; /* Align left edge of the bar with the left edge of the viewport */
+    z-index: 1030; /* Ensure it stays on top of other content */
+}
+.navbar {
+    background-color: #FFFFFF;
+    border-bottom: 2px solid #000000;
+    padding: 10px 0;
+    width: 100%;
+    position: fixed; /* Fix the navbar at the top */
+    top: 38px; /* Set top position to the height of the top-bar plus its padding */
+    left: 0;
+    z-index: 1029; /* Just below the top bar to maintain hierarchy */
+}
+.adjust {
+    padding-top: 100px;
+}
+.navbar-brand {
+    display: flex;
+    align-items: center; /* This will vertically align the logo if it's not aligned */
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center; /* Aligns navbar items vertically in the center */
+}
+
+.nav-link {
+    padding: 8px 12px; /* Provides padding around the links for better spacing */
+}
+
+.btn-contact {
+    background-color: #efb933;
+    color: #000000;
+    border: none;
+    transition: background-color 0.3s ease;
+    padding: 10px 20px; /* Adjusted padding for better fitting and visual appeal */
+}
+
+.btn-contact:hover {
+    background-color: #eece4c;
+    color: #ffffff;
+}
+
+/* Ensuring vertical centering for all items in the navbar */
+.navbar .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* This helps space out logo and nav items evenly */
+}
+
+
+.brand-title {
+    text-align: left; /* Centers the subtitle */
+    color: #333333;
+    font-size: normal normal normal 16px/25px Poppins; /* Smaller font size for subtitle */
+    margin-bottom: 0; /* Reduces space below the title */
+
+}
+
+.brand-subtitle {
+    text-align: left; /* Centers the main title */
+    color: #333333;
+}
+
+@media (max-width: 992px) {
+    .main-content {
+        text-align: center;
+    }
+}
+
+@media (max-width: 992px) {
+    .container .row .col-md-6 {
+        text-align: center;
+        margin-bottom: 20px; /* Adds space between the stacked columns on smaller screens */
+    }
+    .container .row .col-md-6 iframe {
+        width: 100%;
+        height: auto; /* Adjusts the height automatically to maintain aspect ratio */
+    }
+}
+
+.secondtitle {
+    margin-top: 4rem; /* Adds space above the title */
+    font: normal normal 600 22px/33px Poppins;
+    color: #efb933;
+    text-align: left;
+}
+
+.description {
+    margin-top: 1rem; /* Adds space above the description */
+    text-align: left;
+}
+
+.button-container {
+    margin-top: 1rem; /* Adds space above the button */
+    text-align: left;
+}
+
+
+/* Styling buttons to match the theme */
+.btn-primary {
+    background-color: #efb933;
+    border-color: #eece4c;
+    color: #ffffff;
+}
+
+.btn-primary:hover {
+    background-color: #eece4c;
+    color: #ffffff; /* Ensures hover states are visually appealing */
+}
+
+.secondtitle {
+    font: normal normal 600 22px / 33px Poppins;
+    letter-spacing: 0px;
+    color: #efb933;
+    text-align: left;
+}
+.descriptionFast {
+    text-align: left;
+}
+.button-container {
+    text-align: left; /* Aligns the button to the left */
+}
+.feature-icon {
+    width: 60px; /* Adjust the size as needed */
+    height: auto;
+}
+
+.feature {
+    margin-bottom: 20px; /* Space between feature blocks */
+}
+
+.subtitleChoose {
+    text-align: left;
+    font: normal normal normal 16px / 21px Poppins;
+    letter-spacing: 0px;
+    color: #333333;
+}
+.titleChoose {
+    font: normal normal 600 22px / 33px Poppins;
+    letter-spacing: 0px;
+    color: #efb933;
+    text-align: left; 
+}
+.col-auto {
+    flex: 0 0 auto; /* Ensures the column containing the icon does not grow */
+}
+
+.col {
+    flex-grow: 1; /* Allows the text column to take up the remaining space */
+    padding-left: 15px; /* Adds some space between the icon and the text */
+}
+
+@media (max-width: 768px) {
+    .feature {
+        text-align: center;
+    }
+
+    .col-auto, .col {
+        flex: 0 0 100%; /* Stacks the layout on smaller screens */
+        text-align: center; /* Centers content on smaller screens */
+    }
+
+    .col {
+        padding-left: 0; /* Removes padding on smaller screens */
+    }
+}
+.shadow {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    background-color: #fff; /* White background to highlight the shadow */
+    border-radius: 8px; /* Rounded corners for aesthetics */
+    padding: 0px; /* Padding inside the shadow box */
+    margin-top: 20px; /* Space above the section */
+    margin-bottom: 20px; /* Space below the section */
+    text-align: left;
+}
+
+.titleBlack {
+    background-color: #000;
+    padding: 10px 20px;
+    border-radius: 5px 5px 0 0;
+    font: normal normal bold 22px / 33px Poppins;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+}
+
+.feature {
+    padding: 20px; /* Space inside each feature block */
+    align-items: center; /* Center items vertically */
+    border-bottom: 1px solid #eee; /* Light line between features */
+}
+
+.feature:last-child {
+    border-bottom: none; /* No border for the last item */
+}
+
+.deposit-steps {
+    background-color: #fff;
+    border-radius: 8px;
+}
+.secure-title {
+    padding-top: 1rem !important;
+    font: normal normal normal 17px / 25px Poppins;
+    letter-spacing: 0px;
+    color: #333333;
+}
+
+.secure-title, .deposit-title {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.deposit-title {
+    font-weight: bold;
+    margin-bottom: 30px;    
+}
+.highlight {
+    color: #efb933; /* Yellow color */
+}
+.step {
+    position: relative; /* Needed to position the step-number correctly */
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    padding-left: 54px; /* Adjust padding to make space for the step number */
+}
+
+.step-number {
+    position: absolute;
+    top: -10px;
+    left: 10px; /* Adjust to ensure the number is partially outside the step box */
+    width: 38px;
+    height: 33px;
+    background-color: #efb933;
+    color: #FFFFFF;
+    border-radius: 5px; /* Rounded corners */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font: normal normal 600 14px / 34px Poppins;
+    
+}
+
+.step-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin-top: -15px;  /* Reduce or remove top margin to move up */
+    margin-bottom: 5px;  /* Reduce bottom margin to tighten space */
+    text-align: left;
+    padding-left: 5px;  /* Ensure alignment with step content */
+}
+
+.step p {
+    color: #666;
+    font-size: 16px;
+    text-align: left;
+}
+@media (max-width: 768px) {
+    .deposit-steps .row > .col-md-3 {
+        /* Full width on smaller screens */
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 768px) {
+    .deposit-steps .row > .col-md-3 {
+        /* Two columns on larger screens */
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+.rounded {
+    border-radius: var(--bs-border-radius) !important;
+}
+.home-black-box {
+    background-color: #333333; 
+    color: #ffffff;
+    box-sizing: border-box;
+}
+
+.merchant-risk-title {
+   font: normal normal 600 36px/42px Poppins
+}
+.description{
+    letter-spacing: 0px;
+    text-align: center;
+    color: #333;
+    margin-top: 0.5rem; /* Reduced top margin */
+    margin-bottom: 0.5rem; /* Reduced bottom margin, adjust as needed */
+    font-size: 16px; /* example size, adjust as needed */
+}
+.contantUsTitle {
+    letter-spacing: 0px;
+    color: #FFD700;
+    font: normal normal 600 22px/33px Poppins
+
+}
+.address {
+    font: normal normal normal 12px / 18px Poppins;
+    letter-spacing: 0px;
+    color: #A7A7A7;
+}
+footer {
+    background-color: #333333; 
+    color: #ffffff;
+    text-align: center;
+}
+html, body {
+    height: 100%; /* Full height */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    scroll-behavior: smooth;
+}
